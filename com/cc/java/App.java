@@ -11,9 +11,13 @@ public class App {
         cat.fellFarbe = "grau";
         cat.alter = 9;
 
-        System.out.println(cat.tellYourName());
-        System.out.println(cat.tellYourFellFarbe());
-        System.out.println(cat.tellYourAge());
+        // System.out.println(cat.tellYourName());
+        // System.out.println(cat.tellYourFellFarbe());
+        // System.out.println(cat.tellYourAge());
+
+        output(cat.tellYourName());
+        output(cat.tellYourFellFarbe());
+        output(Integer.toString(cat.tellYourAge()));
 
         // cat.tellYourAddress();
         // cat.tellYourName();
@@ -21,18 +25,23 @@ public class App {
         // cat.sayHall0();
         // cat.tellYourAddress();
 
-        // System.out.println("------------------");
+        output("------------------");
 
-        // Cat cat2 = new Cat();
-        // System.out.println(cat2);
-        // cat2.tellYourAddress();
-        // cat2.tellYourName();
+        Cat cat2 = new Cat();
+        System.out.println(cat2);
+        cat.name = "Davi";
+        cat.fellFarbe = "schwul";
+        cat.alter = 7;
 
-
+        output(cat.tellYourName());
+        output(cat.tellYourFellFarbe());
+        output(Integer.toString(cat.tellYourAge()));
 
     }
 
-   
+   public static void output(String outputStr){
+        System.out.println(outputStr);
+   }
 
 }
 
