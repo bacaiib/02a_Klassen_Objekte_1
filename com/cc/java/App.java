@@ -7,15 +7,26 @@ public class App {
         // Objekt ensteht..
         Cat cat = new Cat(); // Instanziierung..
         System.out.println(cat);
+        cat.name = "Peter";
+        cat.fellFarbe = "grau";
+        cat.alter = 9;
+
+        System.out.println(cat.tellYourName());
+        System.out.println(cat.tellYourFellFarbe());
+        System.out.println(cat.tellYourAge());
+
+        // cat.tellYourAddress();
+        // cat.tellYourName();
 
         // cat.sayHall0();
-        cat.tellYourAddress();
+        // cat.tellYourAddress();
 
-        System.out.println("------------------");
+        // System.out.println("------------------");
 
-        Cat cat2 = new Cat();
-        System.out.println(cat2);
-        cat2.tellYourAddress();
+        // Cat cat2 = new Cat();
+        // System.out.println(cat2);
+        // cat2.tellYourAddress();
+        // cat2.tellYourName();
 
 
 
