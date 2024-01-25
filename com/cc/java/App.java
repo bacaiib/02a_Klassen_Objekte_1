@@ -5,11 +5,11 @@ public class App {
     public static void main(String[] args) {
 
         // Objekt ensteht..
-        Cat cat = new Cat(); // Instanziierung..
+        Cat cat = new Cat("Jasper", "geld", 5); // Instanziierung..
         System.out.println(cat);
-        cat.name = "Peter";
-        cat.fellFarbe = "grau";
-        cat.alter = 9;
+        // cat.name = "Peter";
+        // cat.fellFarbe = "grau";
+        // cat.alter = 9;
 
         // System.out.println(cat.tellYourName());
         // System.out.println(cat.tellYourFellFarbe());
@@ -27,15 +27,15 @@ public class App {
 
         output("------------------");
 
-        Cat cat2 = new Cat();
+        Cat cat2 = new Cat("Hans", "braun", 3);
         System.out.println(cat2);
-        cat.name = "Davi";
-        cat.fellFarbe = "schwul";
-        cat.alter = 7;
+        // cat.name = "Davi";
+        // cat.fellFarbe = "pink";
+        // cat.alter = 7;
 
-        output(cat.tellYourName());
-        output(cat.tellYourFellFarbe());
-        output(Integer.toString(cat.tellYourAge()));
+        output(cat2.tellYourName());
+        output(cat2.tellYourFellFarbe());
+        output(Integer.toString(cat2.tellYourAge()));
 
     }
 
