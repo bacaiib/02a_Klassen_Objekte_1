@@ -32,7 +32,7 @@ public class Cat {
 
     // public void setFellFarbe(String fellFarbe) {
     //     this.fellFarbe = fellFarbe;
-    }
+    // }
 
     public int getAlter() {
         return alter;
