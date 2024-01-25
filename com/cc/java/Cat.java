@@ -2,9 +2,9 @@ package com.cc.java;
 
 public class Cat {
 
-    String name;
-    String fellFarbe;
-    int alter;
+    private String name;
+    private String fellFarbe;
+    private int alter;
 
     
     public Cat(String name, String fellFarbe, int alter) {
@@ -13,28 +13,49 @@ public class Cat {
         this.alter = alter;
     }
 
-    public String tellYourName(){
-        return this.name;
-        //System.out.println(name);
+    
+    public String getName() {
+        if (getPermission()) {
+            return name;
+        } else {
+        return "Sorry, no premission!";
+    }
+}
+
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String tellYourFellFarbe(){
-        return this.fellFarbe;
+    public String getFellFarbe() {
+        return fellFarbe;
     }
 
-    public int tellYourAge(){
-        return this.alter;
+    public void setFellFarbe(String fellFarbe) {
+        this.fellFarbe = fellFarbe;
     }
-    public void sayHall0(){
+
+    public int getAlter() {
+        return alter;
+    }
+
+    public void setAlter(int alter) {
+        this.alter = alter;
+    }
+
+    private boolean getPermission() {
+        return false;
+    }
+
+    // public void sayHall0(){
        
-        System.out.println("Hello");
-    }
+    //     System.out.println("Hello");
+    // }
 
-    public void tellYourAddress(){
+    // public void tellYourAddress(){
 
-        System.out.println(this);
+    //     System.out.println(this);
 
     }
     
 
-}
+
