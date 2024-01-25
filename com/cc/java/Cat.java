@@ -30,8 +30,8 @@ public class Cat {
         return fellFarbe;
     }
 
-    public void setFellFarbe(String fellFarbe) {
-        this.fellFarbe = fellFarbe;
+    // public void setFellFarbe(String fellFarbe) {
+    //     this.fellFarbe = fellFarbe;
     }
 
     public int getAlter() {
